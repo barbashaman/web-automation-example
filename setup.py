@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 try:
-    long_description = open("Readme.md").read()
+    long_description = open("README.rst").read()
 except IOError:
     long_description = ""
 

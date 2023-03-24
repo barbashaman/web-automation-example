@@ -9,11 +9,12 @@ class LoginTestCase(unittest.TestCase):
     URL = "https://www.saucedemo.com/" # the URL to test
     USERNAME = "standard_user" # the valid username to use
     PASSWORD = "secret_sauce" # the valid password to use
-    WRONG_PASSWORD = "not_so_secret"
+    WRONG_PASSWORD = "secret_spice"
 
     def setUp(self):
         # create a new Chrome session
-        self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        # self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        self.driver = webdriver.Chrome(executable_path= r"chromedriver")
         self.driver.maximize_window()
         self.driver.get(self.URL)
         self.login_task = LoginTask(self.driver)
