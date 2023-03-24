@@ -26,7 +26,3 @@ python LoginTestCase.py
 
 Note: Before running the test case, make sure that the webdriver executable file for the browser you are using is in the project
 If not, you can add it.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
