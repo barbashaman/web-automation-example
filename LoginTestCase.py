@@ -13,6 +13,7 @@ class LoginTestCase(unittest.TestCase):
 
     def setUp(self):
         # create a new Chrome session
+        # There is a way to lay the responsability of mantaining the webdriver to a webdrivermanager. Should be something like the following line
         # self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         self.driver = webdriver.Chrome(executable_path= r"chromedriver")
         self.driver.maximize_window()
