@@ -34,6 +34,7 @@ class LoginTestCase(unittest.TestCase):
         # verify that the login was successful by checking the current URL
         expected_url = "https://www.saucedemo.com/inventory.html"
         actual_url = self.driver.current_url
+        
         self.assertEqual(expected_url, actual_url, "The login was successful")
         
     # Login Test Case #1: Unsuccessful Login - Wrong Password
